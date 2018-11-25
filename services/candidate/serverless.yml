@@ -22,6 +22,7 @@ provider:
   runtime: nodejs8.10
   region: us-west-2
   profile: voting-profile
+  memorySize: 128
 # you can overwrite defaults here
 #  stage: dev
 
