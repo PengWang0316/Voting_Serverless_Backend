@@ -23,6 +23,11 @@ provider:
   region: us-west-2
   profile: voting-profile
   memorySize: 128
+  environment:
+    DB_HOST: ${file(../../config.js):fetchDBHost}
+    DB_NAME: ${file(../../config.js):fetchDBName}
+    DB_USERNAME: ${file(../../config.js):fetchDBUsername}
+    DB_PASSWORD: ${file(../../config.js):fetchDBPassword}
 # you can overwrite defaults here
 #  stage: dev
 
@@ -43,11 +48,11 @@ provider:
 #            - "/*"
 
 # you can define service wide environment variables here
-environment:
-  host: ${file(../../config.js):fetchDBHost}
-  database: ${file(../../config.js):fetchDBName}
-  user: ${file(../../config.js):fetchDBUsername}
-  password: ${file(../../config.js):fetchDBPassword}
+# environment:
+#   DB_HOST: voting.c80vwyky2vzq.us-west-2.rds.amazonaws.com
+#   DB_NAME: ${file(../../config.js):fetchDBName}
+#   DB_USERNAME: ${file(../../config.js):fetchDBUsername}
+#   DB_PASSWORD: ${file(../../config.js):fetchDBPassword}
 
 # you can add packaging information here
 package:
