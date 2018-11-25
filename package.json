@@ -1,0 +1,28 @@
+{
+  "name": "voting_serverless_backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "config.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PengWang0316/Voting_Serverless_Backend.git"
+  },
+  "keywords": [
+    "DApp",
+    "Serverless",
+    "AWS",
+    "Lambda"
+  ],
+  "author": "Kevin W.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PengWang0316/Voting_Serverless_Backend/issues"
+  },
+  "homepage": "https://github.com/PengWang0316/Voting_Serverless_Backend#readme",
+  "dependencies": {
+    "mysql": "^2.16.0"
+  }
+}
